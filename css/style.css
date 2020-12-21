@@ -11,7 +11,7 @@ body{
 .header{
     width: 100%;
     height: auto;
-    background-color: rgba(255, 247, 160, .6);
+    background-color: rgba(247, 245, 176, .6);
     position: fixed;
     top: 0;
     left: 0;
@@ -28,8 +28,8 @@ body{
 .header-nav li{
     list-style: none;
     font-size: 2em;
-    color: #F3F9FD;
-    -webkit-text-stroke: 1px #F5BECF;
+    color: #E62954;
+    /*-webkit-text-stroke: 1px #F5BECF;*/
 }
 .header-nav ul{
     text-align: right;
@@ -37,22 +37,22 @@ body{
 }
 
 
-.title-name,.sub-title,.contents-title,header{
+.title-name,.sub-title,.contents-title,header,.sns-text{
     font-family: 'Concert One', cursive;
     /*font-family: 'Galada', cursive;*/
 }
 
 /* Top */
 .background-img{
-    background-image: url(../img/スクロールグループ\ 1.png);
+    background-image: url(../img/top_img.png);
     width: 100%;
     height: 100vh;
     background-position: center;    
 }
 
 .title-name,.sub-title{
-    -webkit-text-stroke: 1px#FFF7A0;
-    color: #F3F9FD;
+    -webkit-text-stroke: 1.5px #7D3790;
+    color: #DF91BC;
 }
 
 .title-name{
@@ -61,7 +61,6 @@ body{
 }
 
 .sub-title{
-    color: #fff;
     font-size: 4em;
 }
 
@@ -69,7 +68,23 @@ body{
 /* Product */
 .contents-title{
     font-size: 6em;
-    color: #F3F9FD;
+    color: #280017;
+}
+
+.the-works{
+    width: 100%;
+    height: auto;
+    margin: 2rem auto 0 auto;
+}
+
+.product-img{
+    width: auto;
+    height: auto;
+}
+
+.product-img img{
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -78,16 +93,37 @@ body{
     width: 100vw;
 }
 .Product{
-    background-color: #FBE5E7;
+    background-color: #DF91BC;
 }
 .Profile{
-    background-color: #FFFABB;
+    background-color: #F7F5B0;
 }
 .Contact{
-    background-color: #D3ECF3;
+    background-color: #BBADD4;
+}
+/* contact */
+.Contact .container{
+    margin-top: 6em;
 }
 
-@media only screen and (max-width: 900px){
+.sns-list{
+    margin-top: 2rem;
+}
+
+.sns-list img{
+    width: 150px;
+    height: 150px;
+}
+
+.sns-text{
+    font-size: 3em;
+    color: #280017;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+@media only screen and (max-width: 992px){
+    /* header */
     .header-nav{
         padding-left: 0;
     }
@@ -102,6 +138,7 @@ body{
         font-size: 1.2em;
     }
 
+    /* top */
     .title-name{
         font-size: 250%;
     }
@@ -111,5 +148,30 @@ body{
 
     .contents-title{
         font-size: 250%;
+    }
+
+    /*product*/
+    .product-img img{
+        width: 50%;
+        height: 50%;
+    }
+    .Product{
+        width: 100vw;
+        height: auto;
+    }
+
+    /*contact*/
+    .Contact .container{
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+
+    .sns-list img{
+        width: 75px;
+        height: 75px;
+    }
+
+    .sns-text{
+        font-size: 1.2em;
     }
 }
