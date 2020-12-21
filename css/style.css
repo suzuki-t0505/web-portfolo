@@ -69,6 +69,7 @@ body{
 .contents-title{
     font-size: 6em;
     color: #280017;
+    padding-top: 50px;
 }
 
 .the-works{
@@ -162,8 +163,8 @@ body{
 
     /*contact*/
     .Contact .container{
-        margin-top: 20%;
-        margin-bottom: 20%;
+        margin-top: 30%;
+        margin-bottom: 30%;
     }
 
     .sns-list img{
