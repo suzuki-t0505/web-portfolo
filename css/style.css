@@ -27,13 +27,16 @@ body{
 
 .header-nav li{
     list-style: none;
-    font-size: 2em;
-    color: #E62954;
+    font-size: 1.9em;
     /*-webkit-text-stroke: 1px #F5BECF;*/
 }
 .header-nav ul{
     text-align: right;
     padding: 0;
+}
+.header-nav li a{
+    text-decoration: none;
+    color: #E62954;
 }
 
 

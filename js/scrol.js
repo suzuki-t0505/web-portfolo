@@ -1,12 +1,10 @@
-window.addEventListener("scroll",function(){
-    let scroll = window.pageXOffset;
-    if(scroll > 5000){
-        document.body.style.backgroundColor = "#DF91BC";
-    }
-    else if(scroll > 2000){
-        document.body.style.backgroundColor = "#F7F5B0";
-    }
-    else if(scroll > 1000){
-        document.body.style.backgroundColor = "#BBADD4";
-    }
-})
+$(function(){
+    $('a[href^="#"]').on('click',function(){
+        var speed = 400;
+        var href = $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $('body,html').animate({scrollTop:position},speed,'swing');
+        return false;
+    });
+});
